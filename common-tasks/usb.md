@@ -161,12 +161,8 @@ In order to use a USB mouse, you must first attach it to a USB qube, then
 give that qube permission to pass mouse input to dom0. Note that allowing
 mouse access from a USB qube gives it great power. In short:
 
- * It will be able to change any global and per-domain setting available within GUI
- * It will be able to attach untrusted devices to domains that should not
-   have device access
- * It will be able to enable networking in network-disconnected domains
- * It will be able to initiate file transfer between domains.
-   (For more details, see [here][input-proxy].)
+ * It will be able to change any global and per-domain setting available within GUI 
+ (For more details, see [here][usb-mouse-warning].)
 
 If you are sure you wish to proceed, then you must edit the
 `qubes.InputMouse` policy file in dom0, which is located here:
@@ -366,3 +362,4 @@ This feature is not yet available in Qubes Manager however, if you would like to
 [usb-challenges]: http://blog.invisiblethings.org/2011/05/31/usb-security-challenges.html
 [project-page]: https://www.qubes-os.org/gsoc/
 [gsoc-page]: https://summerofcode.withgoogle.com/organizations/6239659689508864/
+[usb-mouse-warning]: https://github.com/QubesOS/qubes-app-linux-input-proxy/blob/master/README.md#security-notice
